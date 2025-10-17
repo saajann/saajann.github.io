@@ -1,0 +1,214 @@
+body {
+    background-color: #fdfdfd;
+    background-image: linear-gradient(90deg, #eee 1px, transparent 1px), linear-gradient(#eee 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: #1a1a1a;
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.navbar {
+    margin-bottom: 4rem;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+
+.navbar a {
+    color: #555;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.navbar a:hover {
+    color: #1a1a1a;
+}
+
+/* Active link styles */
+.home-page .navbar a[href="/"] {
+    color: #1a1a1a;
+    border-bottom: 2px dashed red;
+}
+
+.education-page .navbar a[href="/education"] {
+    color: #1a1a1a;
+    border-bottom: 2px dashed red;
+}
+
+.experience-page .navbar a[href="/experience"] {
+    color: #1a1a1a;
+    border-bottom: 2px dashed red;
+}
+
+.projects-page .navbar a[href="/projects"] {
+    color: #1a1a1a;
+    border-bottom: 2px dashed red;
+}
+
+header {
+    margin-bottom: 5rem;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #555;
+}
+
+.info-item svg {
+    color: #555;
+}
+
+h1, h2 {
+    font-weight: 700;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+h2::before {
+    content: '*';
+    color: red;
+    margin-right: 0.5rem;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: #1a1a1a;
+    text-decoration: none;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+a:hover {
+    color: #555;
+    border-bottom-color: #555;
+}
+
+header p {
+    color: #555;
+}
+
+section {
+    margin: 5rem 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.education-header, .job-header, .education-subheader, .job-subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.education-item .institution, .work .company {
+    font-weight: 700;
+}
+
+.location,
+.date {
+    color: #555;
+    font-style: italic;
+}
+
+.work .job, .education-item {
+    margin-bottom: 2rem;
+}
+
+.work .job-header h3, .education-header h3 {
+    margin: 0;
+}
+
+#projects ul li {
+    margin-bottom: 2rem;
+}
+
+#projects p {
+    color: #555;
+}
+
+.all-projects {
+    color: #555;
+    border-bottom: 1px solid #555;
+}
+
+.links li {
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+
+footer {
+    margin-top: 4rem;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    .navbar li {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .header-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .education-header, .job-header, .education-subheader, .job-subheader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+}
