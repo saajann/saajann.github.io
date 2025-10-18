@@ -123,6 +123,16 @@ a:hover {
     border-bottom-color: #555;
 }
 
+.education-header h3 a {
+    color: #1a1a1a;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.education-header h3 a:hover {
+    color: red;
+}
+
 header p {
     color: #555;
 }
@@ -159,6 +169,45 @@ ul {
 
 .work .job-header h3, .education-header h3 {
     margin: 0;
+}
+
+.education-item h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.education-item h5 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.education-item ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.course-table th, .course-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.course-table th:nth-child(2), .course-table td:nth-child(2),
+.course-table th:nth-child(3), .course-table td:nth-child(3) {
+    text-align: center;
+}
+
+
+.course-table th {
+    background-color: #f2f2f2;
+    text-align: left;
 }
 
 #projects ul li {
