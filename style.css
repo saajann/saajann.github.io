@@ -89,10 +89,7 @@ body::before {
     margin-bottom: 4rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     padding-bottom: 1rem;
-    position: sticky;
-    top: 0;
     background-color: var(--bg-color);
-    z-index: 1000;
     padding-top: 1rem;
 }
 
@@ -460,6 +457,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 /* Disabled links */
 a.disabled {
     pointer-events: none;
