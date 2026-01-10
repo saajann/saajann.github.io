@@ -1,6 +1,5 @@
 const translations = {
     en: {
-        "nav.home": "home",
         "nav.education": "education",
         "nav.experience": "professional experience",
         "nav.projects": "projects",
@@ -36,7 +35,6 @@ const translations = {
         "loc.viadana": "Viadana, Italy"
     },
     it: {
-        "nav.home": "home",
         "nav.education": "istruzione",
         "nav.experience": "esperienza professionale",
         "nav.projects": "progetti",
