@@ -16,12 +16,17 @@
     <div class="container">
         <nav class="navbar">
             <ul>
-                <li><a href="#home">home</a></li>
-                <li><a href="#education">education</a></li>
-                <li><a href="#experience">professional experience</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#contacts">contacts</a></li>
+                <li><a href="#home" data-i18n="nav.home">home</a></li>
+                <li><a href="#education" data-i18n="nav.education">education</a></li>
+                <li><a href="#experience" data-i18n="nav.experience">professional experience</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">projects</a></li>
+                <li><a href="#contacts" data-i18n="nav.contacts">contacts</a></li>
             </ul>
+            <div class="language-switcher">
+                <span id="lang-en" class="lang-option active">EN</span>
+                <span class="separator">/</span>
+                <span id="lang-it" class="lang-option">IT</span>
+            </div>
         </nav>
 
         <header id="home">
@@ -33,7 +38,7 @@
                             d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
                             fill="currentColor" />
                     </svg>
-                    <span>Mantova, Italy</span>
+                    <span data-i18n="loc.mantova">Mantova, Italy</span>
                 </div>
                 <div class="info-item">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,10 +46,11 @@
                             d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"
                             fill="currentColor" />
                     </svg>
-                    <span>Computer Engineering Student</span>
+                    <span data-i18n="header.role">Computer Engineering Student</span>
                 </div>
             </div>
-            <p>Final-year <strong>Computer Engineering student</strong> with hands-on experience as <strong>Software
+            <p data-i18n="header.description">Final-year <strong>Computer Engineering student</strong> with hands-on
+                experience as <strong>Software
                     Developer</strong> and <strong>AI Engineer</strong>.
                 Passionate about <strong>automation</strong> and <strong>process optimization</strong>, with strong
                 <strong>Python</strong> skills and a <strong>data-driven approach</strong> to
@@ -57,17 +63,19 @@
         </header>
 
         <section id="education">
-            <h2>education</h2>
+            <h2 data-i18n="section.education">education</h2>
             <div class="education-item">
                 <div class="education-header">
-                    <h3><a href="https://inginf.unimn.it" target="_blank">Computer Engineering &#8599;</a></h3>
+                    <h3><a href="https://inginf.unimn.it" target="_blank" data-i18n="edu.uni.title">Computer Engineering
+                            &#8599;</a></h3>
                     <span class="date">2023 - 2026</span>
                 </div>
                 <div class="education-subheader">
-                    <p class="institution">Bachelor's Degree, University of Modena and Reggio Emilia</p>
-                    <span class="location">Mantova, Italy</span>
+                    <p class="institution" data-i18n="edu.uni.degree">Bachelor's Degree, University of Modena and Reggio
+                        Emilia</p>
+                    <span class="location" data-i18n="loc.mantova">Mantova, Italy</span>
                 </div>
-                <p>Relevant courses: Numerical Analysis, Statistics,
+                <p data-i18n="edu.uni.courses">Relevant courses: Numerical Analysis, Statistics,
                     Databases, Internet Web & Cloud, Image
                     Processing,
                     Machine Learning.
@@ -75,44 +83,50 @@
             </div>
             <div class="education-item">
                 <div class="education-header">
-                    <h3><a href="https://www.istitutosanfelice.edu.it/percorsi-studio?id=13" target="_blank">Scientific
+                    <h3><a href="https://www.istitutosanfelice.edu.it/percorsi-studio?id=13" target="_blank"
+                            data-i18n="edu.hs.title">Scientific
                             High School &#8599;</a></h3>
                     <span class="date">2018 - 2023</span>
                 </div>
                 <div class="education-subheader">
                     <p class="institution">Istituto Superiore Ettore Sanfelice</p>
-                    <span class="location">Viadana, Italy</span>
+                    <span class="location" data-i18n="loc.viadana">Viadana, Italy</span>
                 </div>
             </div>
         </section>
 
         <section id="experience" class="work">
-            <h2>professional experience</h2>
+            <h2 data-i18n="section.experience">professional experience</h2>
             <div class="job">
                 <div class="job-header">
                     <h3>AI Engineer</h3>
-                    <span class="date">June 2025 - Present</span>
+                    <span class="date" data-i18n="exp.kosmo.date">June 2025 - Present</span>
                 </div>
                 <div class="job-subheader">
                     <p class="company"><a href="https://www.kosmosoft.eu" target="_blank">Kosmosoft Engineering
                             &#8599;</a></p>
-                    <span class="location">Mantova, Italy</span>
+                    <span class="location" data-i18n="loc.mantova">Mantova, Italy</span>
                 </div>
                 <ul>
-                    <li><strong>Automated document processing pipeline</strong> by developing <strong>Python</strong>
+                    <li data-i18n="exp.kosmo.desc1"><strong>Automated document processing pipeline</strong> by
+                        developing <strong>Python</strong>
                         scripts for cleaning and
                         preprocessing company documentation, reducing manual effort by <strong>80%</strong>.</li>
-                    <li>Designed and developed <strong>RESTful API</strong> endpoints for intelligent chatbot
+                    <li data-i18n="exp.kosmo.desc2">Designed and developed <strong>RESTful API</strong> endpoints for
+                        intelligent chatbot
                         integration using <strong>Python</strong>
                         and <strong>FastAPI</strong>.</li>
-                    <li>Built end-to-end <strong>RAG chatbot</strong> using <strong>LangChain</strong>,
+                    <li data-i18n="exp.kosmo.desc3">Built end-to-end <strong>RAG chatbot</strong> using
+                        <strong>LangChain</strong>,
                         <strong>LLMs</strong> via <strong>Ollama</strong>, embeddings and <strong>Qdrant</strong> vector
                         database for automated customer support.
                     </li>
-                    <li>Implemented <strong>pattern recognition algorithms</strong> for question similarity matching,
+                    <li data-i18n="exp.kosmo.desc4">Implemented <strong>pattern recognition algorithms</strong> for
+                        question similarity matching,
                         improving response
                         accuracy.</li>
-                    <li>Integrated technical documentation and company data to improve information retrieval and enable
+                    <li data-i18n="exp.kosmo.desc5">Integrated technical documentation and company data to improve
+                        information retrieval and enable
                         <strong>self-operating support system</strong>.
                     </li>
                 </ul>
@@ -120,38 +134,42 @@
             <div class="job">
                 <div class="job-header">
                     <h3>Software Developer</h3>
-                    <span class="date">June 2024 - September 2024</span>
+                    <span class="date" data-i18n="exp.delta.date">June 2024 - September 2024</span>
                 </div>
                 <div class="job-subheader">
                     <p class="company"><a href="https://www.deltaviadana.it" target="_blank">Delta Service SRL
                             &#8599;</a></p>
-                    <span class="location">Viadana, Italy</span>
+                    <span class="location" data-i18n="loc.viadana">Viadana, Italy</span>
                 </div>
                 <ul>
-                    <li>Designed and implemented <strong>advanced analytical dashboards</strong> for CRM system using
+                    <li data-i18n="exp.delta.desc1">Designed and implemented <strong>advanced analytical
+                            dashboards</strong> for CRM system using
                         <strong>data-driven
                             approach</strong>, enabling real-time monitoring of business KPIs.
                     </li>
-                    <li>Developed web applications and automation scripts using <strong>PHP</strong>,
+                    <li data-i18n="exp.delta.desc2">Developed web applications and automation scripts using
+                        <strong>PHP</strong>,
                         <strong>HTTP</strong>, <strong>CSS</strong> and <strong>SQL</strong>.
                     </li>
-                    <li>Created <strong>data visualization solutions</strong> for operational metrics, improving
+                    <li data-i18n="exp.delta.desc3">Created <strong>data visualization solutions</strong> for
+                        operational metrics, improving
                         decision-making
                         efficiency.</li>
-                    <li>Analyzed business processes to identify optimization opportunities and implemented technical
+                    <li data-i18n="exp.delta.desc4">Analyzed business processes to identify optimization opportunities
+                        and implemented technical
                         solutions.</li>
-                    <li>Fixed software bugs and provided technical support.</li>
+                    <li data-i18n="exp.delta.desc5">Fixed software bugs and provided technical support.</li>
                 </ul>
             </div>
         </section>
 
         <section id="projects">
-            <h2>projects</h2>
+            <h2 data-i18n="section.projects">projects</h2>
             <ul>
                 <li>
                     <a href="https://github.com/saajann/sentiment-analysis" target="_blank">sentiment-analysis
                         &#8599;</a>
-                    <p>A machine learning model to classify text as positive or negative.</p>
+                    <p data-i18n="proj.sentiment">A machine learning model to classify text as positive or negative.</p>
                     <div class="tech-stack">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">Streamlit</span>
@@ -160,7 +178,8 @@
                 </li>
                 <li>
                     <a href="https://github.com/saajann/playground" target="_blank">playground &#8599;</a>
-                    <p>Fullstack Web App developed with Django to explore backend development.</p>
+                    <p data-i18n="proj.playground">Fullstack Web App developed with Django to explore backend
+                        development.</p>
                     <div class="tech-stack">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">Django</span>
@@ -170,7 +189,8 @@
                 <li>
                     <a href="https://github.com/saajann/github-followers-analyzer"
                         target="_blank">github-followers-analyzer &#8599;</a>
-                    <p>A tool to analyze your GitHub followers, identify who's not following back, and visualize network
+                    <p data-i18n="proj.followers">A tool to analyze your GitHub followers, identify who's not following
+                        back, and visualize network
                         stats.</p>
                     <div class="tech-stack">
                         <span class="tech-tag">Python</span>
@@ -182,7 +202,8 @@
                 <li>
                     <a href="https://github.com/saajann/construction-site-monitoring-system"
                         target="_blank">construction-site-monitoring-system &#8599;</a>
-                    <p>IoT system for safety monitoring in construction sites using Python and MQTT.</p>
+                    <p data-i18n="proj.iot">IoT system for safety monitoring in construction sites using Python and
+                        MQTT.</p>
                     <div class="tech-stack">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">MQTT</span>
@@ -193,8 +214,8 @@
         </section>
 
         <section id="contacts">
-            <h2>contacts</h2>
-            <p>Feel free to reach out to me via email or connect with me on social media.</p>
+            <h2 data-i18n="section.contacts">contacts</h2>
+            <p data-i18n="contacts.desc">Feel free to reach out to me via email or connect with me on social media.</p>
             <ul>
                 <li>
                     <a href="mailto:">
@@ -230,6 +251,7 @@
             <p>Saajan Saini &copy;</p>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

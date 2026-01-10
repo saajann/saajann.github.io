@@ -103,6 +103,35 @@ body::before {
     width: 100%;
 }
 
+/* Language Switcher */
+.language-switcher {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    display: flex;
+    gap: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.lang-option {
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: color 0.3s ease;
+}
+
+.lang-option.active {
+    color: var(--accent-color);
+}
+
+.lang-option:hover {
+    color: var(--text-color);
+}
+
+.separator {
+    color: var(--text-muted);
+}
+
 .navbar a {
     color: var(--text-muted);
     text-decoration: none;
