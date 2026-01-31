@@ -240,10 +240,26 @@ section {
 .job-header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     margin-bottom: 0.5rem;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 1rem;
+}
+
+.job-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.company-logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    object-fit: contain;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 2px;
 }
 
 .education-subheader,

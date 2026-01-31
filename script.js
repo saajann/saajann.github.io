@@ -12,7 +12,11 @@ const translations = {
         "edu.uni.courses": "Relevant courses: Numerical Analysis, Statistics, Databases, Internet Web & Cloud, Image Processing, Machine Learning.",
         "edu.hs.title": "Scientific High School &#8599;",
         "section.experience": "professional experience",
-        "exp.kosmo.date": "June 2025 - Present",
+        "exp.kosmo.date": "July 2025 - September 2025",
+        "exp.uber.date": "February 2026 - Present",
+        "exp.uber.desc1": "Transforming manual processes into efficient, <strong>automated solutions</strong> using <strong>Python</strong>.",
+        "exp.uber.desc2": "Developing <strong>self-operating dashboards</strong> and end-to-end automation of entire workflows.",
+        "exp.uber.desc3": "Designing and optimizing <strong>business processes</strong> and <strong>data pipelines</strong> at a regional and global scale.",
         "exp.kosmo.desc1": "<strong>Automated document processing pipeline</strong> by developing <strong>Python</strong> scripts for cleaning and preprocessing company documentation, reducing manual effort by <strong>80%</strong>.",
         "exp.kosmo.desc2": "Designed and developed <strong>RESTful API</strong> endpoints for intelligent chatbot integration using <strong>Python</strong> and <strong>FastAPI</strong>.",
         "exp.kosmo.desc3": "Built end-to-end <strong>RAG chatbot</strong> using <strong>LangChain</strong>, <strong>LLMs</strong> via <strong>Ollama</strong>, embeddings and <strong>Qdrant</strong> vector database for automated customer support.",
@@ -32,7 +36,8 @@ const translations = {
         "section.contacts": "contacts",
         "contacts.desc": "Feel free to reach out to me via email or connect with me on social media.",
         "loc.mantova": "Mantova, Italy",
-        "loc.viadana": "Viadana, Italy"
+        "loc.viadana": "Viadana, Italy",
+        "loc.krakow": "Krakow, Poland"
     },
     it: {
         "nav.education": "istruzione",
@@ -44,10 +49,14 @@ const translations = {
         "section.education": "istruzione",
         "edu.uni.title": "Ingegneria Informatica &#8599;",
         "edu.uni.degree": "Laurea Triennale, Università di Modena e Reggio Emilia",
-        "edu.uni.courses": "Corsi rilevanti: Calcolo Numerico, Statistica, Basi di Dati, Internet Web & Cloud, Elaborazione Immagini, Machine Learning.",
+        "edu.uni.courses": "Corsi rilevanti: Calcolo Numerico, Statistica, Basi di Dati, Internet Web & Cloud, Image Processing, Machine Learning.",
         "edu.hs.title": "Liceo Scientifico &#8599;",
         "section.experience": "esperienza professionale",
-        "exp.kosmo.date": "Giugno 2025 - Presente",
+        "exp.kosmo.date": "Luglio 2025 - Settembre 2025",
+        "exp.uber.date": "Febbraio 2026 - Presente",
+        "exp.uber.desc1": "Trasformazione di processi manuali in <strong>soluzioni automatizzate</strong> efficienti utilizzando <strong>Python</strong>.",
+        "exp.uber.desc2": "Sviluppo di <strong>dashboard auto-operative</strong> e automazione end-to-end di interi flussi di lavoro.",
+        "exp.uber.desc3": "Progettazione e ottimizzazione di <strong>processi aziendali</strong> e <strong>pipeline di dati</strong> su scala regionale e globale.",
         "exp.kosmo.desc1": "<strong>Pipeline automatizzata di elaborazione documenti</strong> sviluppando script <strong>Python</strong> per la pulizia e pre-elaborazione della documentazione aziendale, riducendo il lavoro manuale dell'<strong>80%</strong>.",
         "exp.kosmo.desc2": "Progettazione e sviluppo di endpoint <strong>API RESTful</strong> per l'integrazione di chatbot intelligenti utilizzando <strong>Python</strong> e <strong>FastAPI</strong>.",
         "exp.kosmo.desc3": "Realizzazione di un <strong>chatbot RAG</strong> end-to-end utilizzando <strong>LangChain</strong>, <strong>LLM</strong> via <strong>Ollama</strong>, embeddings e database vettoriale <strong>Qdrant</strong> per il supporto clienti automatizzato.",
@@ -67,7 +76,8 @@ const translations = {
         "section.contacts": "contatti",
         "contacts.desc": "Sentiti libero di contattarmi via email o connetterti con me sui social media.",
         "loc.mantova": "Mantova, Italia",
-        "loc.viadana": "Viadana, Italia"
+        "loc.viadana": "Viadana, Italia",
+        "loc.krakow": "Cracovia, Polonia"
     }
 };
 
