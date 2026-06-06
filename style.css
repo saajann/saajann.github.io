@@ -458,6 +458,14 @@ ul {
     font-size: 1.2rem;
 }
 
+/* Image-based social icons (PNG/SVG) */
+#contacts img.social-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+}
+
 /* Footer */
 footer {
     margin-top: auto;
