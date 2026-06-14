@@ -416,11 +416,11 @@ ul {
 }
 
 #contacts ul {
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    margin-top: 3rem;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem 1.5rem;
+    max-width: 760px;
+    margin: 3rem auto 0;
 }
 
 #contacts li {
@@ -432,9 +432,11 @@ ul {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    justify-content: center;
     border-bottom: none;
     color: var(--text-color);
     transition: all 0.3s ease;
+    min-height: 100%;
 }
 
 #contacts a:hover {
@@ -529,6 +531,28 @@ footer {
 
     #projects ul {
         grid-template-columns: 1fr;
+    }
+
+    #contacts ul {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+
+    #contacts a {
+        gap: 0.75rem;
+        padding: 0.5rem 0;
+    }
+
+    #contacts svg,
+    #contacts img.social-icon {
+        width: 34px;
+        height: 34px;
+    }
+
+    #contacts span {
+        font-size: 1rem;
     }
 }
 
