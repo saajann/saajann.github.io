@@ -19,8 +19,6 @@
       'hero.status':     'Available for Software Engineering Internships &amp; Roles',
       'hero.location':   'Italy / Europe',
       'hero.cta_email':  'Email Me',
-      'hero.scroll':     'Scroll',
-
       'section.exp':       'Career',
       'heading.exp':       'Experience',
       'exp.uber.role':     'Automation Intern',
@@ -53,14 +51,12 @@
 
       'proj.obsidian.desc': 'Obsidian plugin enabling @-mention syntax for contacts within notes to improve knowledge graph density and personal CRM workflows.',
 
-      'section.extra':     'Recognition &amp; Open Source',
+      'section.extra':     'Recognition &amp; GitHub',
       'heading.extra':     'Extra',
       'extra.gh.label':    'GitHub · <a href="https://github.com/saajann" target="_blank" rel="noopener">@saajann</a>',
       'extra.gh.view':     'View GitHub Profile →',
       'extra.gh.repos':    'Public Repositories',
-      'extra.gh.tenure':   'Years on GitHub',
       'extra.gh.stars':    'Total Stars',
-      'extra.gh.contributions':'Contributions (365d)',
       'extra.subheading.gh':'GitHub',
       'extra.subheading.awards':'Awards &amp; Recognition',
 
@@ -95,14 +91,12 @@
       'nav.extra':       'Extra',
       'nav.about':       'Chi sono',
 
-      'hero.kicker':     'Ingegnere Software',
+      'hero.kicker':     'Software Engineer',
       'hero.name':       'Saajan Saini',
       'hero.tagline':    'Sviluppo <strong>software pulito e scalabile</strong> — sistemi backend, tool open-source e pipeline AI.<br>Appassionato di backend engineering, startup e creazione di prodotti da 0 a 1.',
-      'hero.status':     'Disponibile per stage e ruoli di ingegneria del software',
+      'hero.status':     'Disponibile per stage e ruoli di Software Engineer',
       'hero.location':   'Italia / Europa',
       'hero.cta_email':  'Contattami',
-      'hero.scroll':     'Scorri',
-
       'section.exp':       'Carriera',
       'heading.exp':       'Esperienza',
       'exp.uber.role':     'Automation Intern',
@@ -135,14 +129,12 @@
 
       'proj.obsidian.desc': 'Estensione per Obsidian che introduce la sintassi di menzione (@-mention) all\'interno delle note, migliorando la densità del grafo di conoscenza personale.',
 
-      'section.extra':     'Attività Extra',
+      'section.extra':     'Attività GitHub',
       'heading.extra':     'Extra',
       'extra.gh.label':    'GitHub · <a href="https://github.com/saajann" target="_blank" rel="noopener">@saajann</a>',
       'extra.gh.view':     'Profilo GitHub →',
       'extra.gh.repos':    'Repository Pubbliche',
-      'extra.gh.tenure':   'Anni su GitHub',
       'extra.gh.stars':    'Stelle Totali',
-      'extra.gh.contributions':'Contributi (365gg)',
       'extra.subheading.gh':'GitHub',
       'extra.subheading.awards':'Premi &amp; Riconoscimenti',
 
@@ -155,7 +147,7 @@
 
       'about.p1':          'Studente all\'ultimo anno di <strong>Ingegneria Informatica</strong> presso UNIMORE con votazione prevista di <strong>110/110 (laurea a ottobre 2026)</strong>. Successivamente inizierò la <strong>Laurea Magistrale in Ingegneria Informatica</strong>.',
       'about.p2':          'Mi occupo di backend engineering e intelligenza artificiale applicata: sviluppo sistemi stabili in produzione in Python e Go, implemento architetture RAG e ottimizzo pipeline di automazione complessi. Sono appassionato di backend engineering, startup e sviluppo software open-source.',
-      'about.p3':          'Attualmente alla ricerca di <strong>opportunità di stage e posizioni junior in ingegneria del software</strong>. Contattami pure via <a href="mailto:info@saajansaini.com">email</a>.',
+      'about.p3':          'Currently looking for <strong>software engineering internships and junior roles as a Software Engineer</strong>. Feel free to <a href="mailto:info@saajansaini.com">reach out</a>.',
 
       'skills.prog':       'Linguaggi di Programmazione',
       'skills.frameworks': 'Framework &amp; Strumenti',
@@ -194,9 +186,9 @@
 
     // Update page title + meta description
     if (lang === 'it') {
-      document.title = 'Saajan Saini — Ingegnere Software';
+      document.title = 'Saajan Saini — Software Engineer';
       const desc = document.querySelector('meta[name="description"]');
-      if (desc) desc.content = 'Saajan Saini è un ingegnere software specializzato in sistemi backend, pipeline AI/ML e automazione intelligente. Disponibile per stage. Laurea Magistrale in Ingegneria Informatica.';
+      if (desc) desc.content = 'Saajan Saini is a software engineer specialising in backend systems, AI/ML pipelines and intelligent automation. Available for internships. MSc Computer Engineering.';
     } else {
       document.title = 'Saajan Saini — Software Engineer';
       const desc = document.querySelector('meta[name="description"]');
@@ -238,11 +230,12 @@
   function initGitHubStats() {
     const reposVal = document.getElementById('gh-repos-val');
     const starsVal = document.getElementById('gh-stars-val');
-    const gistsVal = document.getElementById('gh-gists-val');
-    const joinedVal = document.getElementById('gh-joined-val');
+
+    const username = 'saajann';
+    const apiBase = `https://api.github.com/users/${username}`;
 
     // Fetch user profile stats
-    fetch('https://api.github.com/users/saajann', {
+    fetch(apiBase, {
       headers: { 'Accept': 'application/vnd.github.v3+json' }
     })
       .then(r => r.json())
@@ -250,17 +243,10 @@
         if (data.public_repos !== undefined && reposVal) {
           reposVal.textContent = data.public_repos;
         }
-        if (data.public_gists !== undefined && gistsVal) {
-          gistsVal.textContent = data.public_gists;
-        }
-        if (data.created_at !== undefined && joinedVal) {
-          const yearJoined = new Date(data.created_at).getFullYear();
-          joinedVal.textContent = yearJoined;
-        }
       });
 
     // Fetch repos to sum stargazers
-    fetch('https://api.github.com/users/saajann/repos?per_page=100', {
+    fetch(`${apiBase}/repos?per_page=100`, {
       headers: { 'Accept': 'application/vnd.github.v3+json' }
     })
       .then(r => r.json())
