@@ -1,30 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en">
+<html lang="it" data-lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Primary SEO -->
-  <title>Saajan Saini — Software Engineer</title>
-  <meta name="description" content="Saajan Saini is a software engineer specialising in backend systems, AI/ML pipelines and intelligent automation. Available for internships. MSc Computer Engineering.">
-  <meta name="keywords" content="Saajan Saini, software engineer, AI engineer, Python, Go, LangChain, RAG, FastAPI, Docker, automation, computer engineering, Italy">
+  <!-- Primary SEO (Italian) -->
+  <title>Saajan Saini — Ingegnere Software</title>
+  <meta name="description" content="Saajan Saini è un ingegnere software specializzato in sistemi backend, pipeline AI/ML e automazione intelligente. Disponibile per stage. Laurea Magistrale in Ingegneria Informatica.">
+  <meta name="keywords" content="Saajan Saini, ingegnere software, AI engineer, Python, Go, LangChain, RAG, FastAPI, Docker, automazione, ingegneria informatica, Italia">
   <meta name="author" content="Saajan Saini">
-  <link rel="canonical" href="https://saajansaini.com/">
+  <link rel="canonical" href="https://saajansaini.com/it/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://saajansaini.com/">
-  <meta property="og:title" content="Saajan Saini — Software Engineer">
-  <meta property="og:description" content="Crafting clean, scalable software — backend systems, open-source tools and AI pipelines. Available for software engineering internships.">
+  <meta property="og:url" content="https://saajansaini.com/it/">
+  <meta property="og:title" content="Saajan Saini — Ingegnere Software">
+  <meta property="og:description" content="Costruisco software pulito e scalabile — sistemi backend, tool open-source e pipeline AI. Disponibile per stage in ingegneria software.">
   <meta property="og:image" content="https://saajansaini.com/og.png">
-  <meta property="og:locale" content="en_US">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:locale:alternate" content="en_US">
   <meta property="og:site_name" content="Saajan Saini">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Saajan Saini — Software Engineer">
-  <meta name="twitter:description" content="Crafting clean, scalable software — backend systems, open-source tools and AI pipelines.">
+  <meta name="twitter:title" content="Saajan Saini — Ingegnere Software">
+  <meta name="twitter:description" content="Costruisco software pulito e scalabile — sistemi backend, tool open-source e pipeline AI.">
   <meta name="twitter:image" content="https://saajansaini.com/og.png">
+
+  <!-- Hreflang for bilingual SEO -->
+  <link rel="alternate" hreflang="en" href="https://saajansaini.com/">
+  <link rel="alternate" hreflang="it" href="https://saajansaini.com/it/">
+  <link rel="alternate" hreflang="x-default" href="https://saajansaini.com/">
 
   <!-- JSON-LD Person Schema -->
   <script type="application/ld+json">
@@ -34,8 +40,8 @@
     "name": "Saajan Saini",
     "url": "https://saajansaini.com",
     "image": "https://saajansaini.com/og.png",
-    "jobTitle": "Software Engineer",
-    "description": "Software engineer specialising in backend systems, AI/ML pipelines and intelligent automation. Currently pursuing MSc Computer Engineering.",
+    "jobTitle": "Ingegnere Software",
+    "description": "Ingegnere software specializzato in sistemi backend, pipeline AI/ML e automazione intelligente. Attualmente studia Laurea Magistrale in Ingegneria Informatica.",
     "knowsAbout": ["Python", "Go", "LangChain", "RAG", "FastAPI", "Docker", "PyTorch", "LLMs"],
     "sameAs": [
       "https://github.com/saajann",
@@ -49,8 +55,8 @@
   }
   </script>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 </head>
 <body>
 
@@ -63,18 +69,18 @@
         <span>//</span>&nbsp;saajann
       </a>
       <div class="nav__links">
-        <a href="#about"      data-i18n="nav.about">About</a>
-        <a href="#experience" data-i18n="nav.exp">Experience</a>
-        <a href="#projects"   data-i18n="nav.work">Projects</a>
+        <a href="#about"      data-i18n="nav.about">Chi sono</a>
+        <a href="#experience" data-i18n="nav.exp">Esperienza</a>
+        <a href="#projects"   data-i18n="nav.work">Progetti</a>
         <a href="#extra"      data-i18n="nav.extra">Extra</a>
       </div>
       <div class="nav__right">
-        <div class="lang-toggle" role="group" aria-label="Language">
-          <button class="lang-toggle__btn active" data-lang="en" id="lang-en">EN</button>
+        <div class="lang-toggle" role="group" aria-label="Lingua">
+          <button class="lang-toggle__btn" data-lang="en" id="lang-en">EN</button>
           <span class="lang-toggle__sep">/</span>
-          <button class="lang-toggle__btn" data-lang="it" id="lang-it">IT</button>
+          <button class="lang-toggle__btn active" data-lang="it" id="lang-it">IT</button>
         </div>
-        <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <button class="nav__hamburger" id="hamburger" aria-label="Apri menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -83,9 +89,9 @@
 
   <!-- Mobile menu -->
   <div class="nav__mobile" id="mobileMenu">
-    <a href="#about"      data-i18n="nav.about"  onclick="closeMobile()">About</a>
-    <a href="#experience" data-i18n="nav.exp"    onclick="closeMobile()">Experience</a>
-    <a href="#projects"   data-i18n="nav.work"   onclick="closeMobile()">Projects</a>
+    <a href="#about"      data-i18n="nav.about"  onclick="closeMobile()">Chi sono</a>
+    <a href="#experience" data-i18n="nav.exp"    onclick="closeMobile()">Esperienza</a>
+    <a href="#projects"   data-i18n="nav.work"   onclick="closeMobile()">Progetti</a>
     <a href="#extra"      data-i18n="nav.extra"  onclick="closeMobile()">Extra</a>
   </div>
 
@@ -98,7 +104,6 @@
 
       <!-- Ambient SVGs -->
       <div class="ambient" style="width:140px;top:15%;right:8%;transform:rotate(-15deg)" aria-hidden="true">
-        <!-- Circuit node -->
         <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.2">
           <circle cx="60" cy="60" r="8"/>
           <line x1="60" y1="20" x2="60" y2="52"/><line x1="60" y1="68" x2="60" y2="100"/>
@@ -110,7 +115,6 @@
         </svg>
       </div>
       <div class="ambient" style="width:110px;top:40%;right:3%;transform:rotate(5deg)" aria-hidden="true">
-        <!-- Git branch -->
         <svg viewBox="0 0 80 120" fill="none" stroke="currentColor" stroke-width="1.2">
           <circle cx="20" cy="24" r="8"/><circle cx="20" cy="96" r="8"/><circle cx="60" cy="48" r="8"/>
           <line x1="20" y1="32" x2="20" y2="88"/>
@@ -118,28 +122,28 @@
         </svg>
       </div>
 
-      <p class="hero__kicker" data-i18n="hero.kicker">Software Engineer</p>
+      <p class="hero__kicker" data-i18n="hero.kicker">Ingegnere Software</p>
       <h1 class="hero__name" data-i18n="hero.name">Saajan Saini</h1>
       <p class="hero__tagline" data-i18n="hero.tagline">
-        Crafting <strong>clean, scalable software</strong> — backend systems, open-source tools and AI pipelines.<br>
-        Deeply interested in backend engineering, startups and building products from 0 to 1.
+        Sviluppo <strong>software pulito e scalabile</strong> — sistemi backend, tool open-source e pipeline AI.<br>
+        Appassionato di backend engineering, startup e creazione di prodotti da 0 a 1.
       </p>
 
       <div class="hero__meta">
         <span class="hero__pill hero__pill--green">
           <svg viewBox="0 0 10 10"><circle cx="5" cy="5" r="3" fill="currentColor"/></svg>
-          <span data-i18n="hero.status">Available for Software Engineering Internships &amp; Roles</span>
+          <span data-i18n="hero.status">Disponibile per stage e ruoli di ingegneria del software</span>
         </span>
         <span class="hero__pill">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
-          <span data-i18n="hero.location">Italy / Europe</span>
+          <span data-i18n="hero.location">Italia / Europa</span>
         </span>
       </div>
 
       <div class="hero__actions">
         <a href="mailto:info@saajansaini.com" class="btn btn--green" id="btn-email">
           <svg viewBox="0 0 24 24"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
-          <span data-i18n="hero.cta_email">Email Me</span>
+          <span data-i18n="hero.cta_email">Contattami</span>
         </a>
         <a href="https://github.com/saajann" target="_blank" rel="noopener" class="btn btn--outline" id="btn-github">
           <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.17.66-.45v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85v2.74c0 .27.16.54.67.45A10 10 0 0 0 12 2z"/></svg>
@@ -151,12 +155,12 @@
         </a>
       </div>
 
-      <div class="hero__scroll" aria-hidden="true" data-i18n="hero.scroll">Scroll</div>
+      <div class="hero__scroll" aria-hidden="true" data-i18n="hero.scroll">Scorri</div>
     </div>
   </section>
 
   <!-- ════════════════════════════════════════
-       ABOUT + SKILLS + EDUCATION
+       CHI SONO + SKILLS + ISTRUZIONE
        ════════════════════════════════════════ -->
   <section id="about" class="section-pad about-section">
     <div class="container">
@@ -165,19 +169,19 @@
         <div class="about__left">
           <div class="about__bio reveal">
             <p data-i18n="about.p1">
-              Final-year <strong>Computer Engineering</strong> student, graduating with <strong>110/110 (expected, October 2026)</strong> from UNIMORE and starting an <strong>MSc in Computer Engineering</strong> directly after.
+              Studente all'ultimo anno di <strong>Ingegneria Informatica</strong> presso UNIMORE con votazione prevista di <strong>110/110 (laurea a ottobre 2026)</strong>. Successivamente inizierò la <strong>Laurea Magistrale in Ingegneria Informatica</strong>.
             </p>
             <p data-i18n="about.p2">
-              I specialise in backend engineering and applied AI — building production systems in Python and Go, shipping RAG pipelines and automating complex workflows end-to-end. I'm deeply interested in backend engineering, startups and contributing to open-source software.
+              Mi occupo di backend engineering e intelligenza artificiale applicata: sviluppo sistemi stabili in produzione in Python e Go, implemento architetture RAG e ottimizzo pipeline di automazione complessi. Sono appassionato di backend engineering, startup e sviluppo software open-source.
             </p>
             <p data-i18n="about.p3">
-              Currently looking for <strong>software engineering internships and junior roles</strong>. Feel free to <a href="mailto:info@saajansaini.com">reach out</a>.
+              Attualmente alla ricerca di <strong>opportunità di stage e posizioni junior in ingegneria del software</strong>. Contattami pure via <a href="mailto:info@saajansaini.com">email</a>.
             </p>
           </div>
 
           <!-- Skills -->
           <div class="skills__block reveal reveal-d1" id="skills">
-            <p class="skills__label" data-i18n="skills.prog">Programming Languages</p>
+            <p class="skills__label" data-i18n="skills.prog">Linguaggi di Programmazione</p>
             <div class="skills__pills" style="margin-bottom:1.5rem">
               <span class="skill-pill skill-pill--hi">Python</span>
               <span class="skill-pill skill-pill--hi">Go</span>
@@ -185,7 +189,7 @@
               <span class="skill-pill">C</span>
             </div>
 
-            <p class="skills__label" data-i18n="skills.frameworks">Frameworks &amp; Tools</p>
+            <p class="skills__label" data-i18n="skills.frameworks">Framework &amp; Strumenti</p>
             <div class="skills__pills" style="margin-bottom:1.5rem">
               <span class="skill-pill">FastAPI</span>
               <span class="skill-pill">Docker</span>
@@ -193,10 +197,10 @@
               <span class="skill-pill">Linux</span>
             </div>
 
-            <p class="skills__label" data-i18n="skills.practices">Engineering Practices</p>
+            <p class="skills__label" data-i18n="skills.practices">Pratiche di Sviluppo</p>
             <div class="skills__pills" style="margin-bottom:1.5rem">
-              <span class="skill-pill skill-pill--hi">REST APIs</span>
-              <span class="skill-pill skill-pill--hi">Microservices</span>
+              <span class="skill-pill skill-pill--hi">REST API</span>
+              <span class="skill-pill skill-pill--hi">Microservizi</span>
               <span class="skill-pill">CI/CD</span>
               <span class="skill-pill">Git &amp; Version Control</span>
               <span class="skill-pill">Debugging</span>
@@ -205,47 +209,47 @@
               <span class="skill-pill">Clean Code</span>
             </div>
 
-            <p class="skills__label" data-i18n="skills.ai">AI &amp; Data</p>
+            <p class="skills__label" data-i18n="skills.ai">AI &amp; Dati</p>
             <div class="skills__pills" style="margin-bottom:1.5rem">
               <span class="skill-pill skill-pill--hi">LangChain</span>
               <span class="skill-pill skill-pill--hi">RAG</span>
               <span class="skill-pill">PyTorch</span>
-              <span class="skill-pill">LLMs</span>
+              <span class="skill-pill">LLM</span>
               <span class="skill-pill">Qdrant</span>
               <span class="skill-pill">Computer Vision</span>
             </div>
 
-            <p class="skills__label" data-i18n="skills.lang">Languages</p>
+            <p class="skills__label" data-i18n="skills.lang">Lingue</p>
             <div class="skills__pills">
-              <span class="skill-pill">English (Fluent)</span>
-              <span class="skill-pill">Italian (Native)</span>
-              <span class="skill-pill">Hindi (Conversational)</span>
-              <span class="skill-pill">French (Learning)</span>
+              <span class="skill-pill">Inglese (Fluente)</span>
+              <span class="skill-pill">Italiano (Madrelingua)</span>
+              <span class="skill-pill">Hindi (Conversazionale)</span>
+              <span class="skill-pill">Francese (In apprendimento)</span>
             </div>
           </div>
         </div>
 
         <aside class="about__sidebar">
           <div class="sidebar__section reveal reveal-d2">
-            <h3 class="sidebar__label" data-i18n="about.edu">Education Highlights</h3>
+            <h3 class="sidebar__label" data-i18n="about.edu">Istruzione</h3>
 
-            <!-- M.Sc. — listed first (logo removed) -->
+            <!-- Laurea Magistrale prima (logo rimosso) -->
             <div class="edu-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="edu-item__logo" style="padding:4px"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
               <div class="edu-item__info">
-                <p class="edu-item__deg" data-i18n="about.msc">M.Sc. Computer Engineering</p>
-                <p class="edu-item__school">Starting 2026</p>
-                <p class="edu-item__note">Expected graduation 2028</p>
+                <p class="edu-item__deg" data-i18n="about.msc">Laurea Magistrale in Ingegneria Informatica</p>
+                <p class="edu-item__school">Dal 2026</p>
+                <p class="edu-item__note">Fine prevista 2028</p>
               </div>
             </div>
 
-            <!-- B.Sc. — second -->
+            <!-- Laurea Triennale seconda -->
             <div class="edu-item">
-              <img src="logos/unimore.jpeg" alt="UNIMORE" class="edu-item__logo" loading="lazy">
+              <img src="../logos/unimore.jpeg" alt="UNIMORE" class="edu-item__logo" loading="lazy">
               <div class="edu-item__info">
-                <p class="edu-item__deg" data-i18n="about.bsc">B.Sc. Computer Engineering</p>
+                <p class="edu-item__deg" data-i18n="about.bsc">Laurea Triennale in Ingegneria Informatica</p>
                 <p class="edu-item__school">UNIMORE · 2023 – 2026</p>
-                <p class="edu-item__note">110/110 expected · Oct 2026</p>
+                <p class="edu-item__note">110/110 previsto · Ott 2026</p>
               </div>
             </div>
           </div>
@@ -258,14 +262,12 @@
   <hr class="divider">
 
   <!-- ════════════════════════════════════════
-       EXPERIENCE
+       ESPERIENZA
        ════════════════════════════════════════ -->
   <section id="experience" class="section-pad">
     <div class="container">
 
-      <!-- Ambient SVG -->
       <div class="ambient" style="width:90px;bottom:10%;left:2%;transform:rotate(-8deg);" aria-hidden="true">
-        <!-- Binary pattern -->
         <svg viewBox="0 0 80 100" fill="none" stroke="currentColor" stroke-width="1">
           <text x="0" y="14" font-family="monospace" font-size="12" fill="currentColor" stroke="none">01</text>
           <text x="0" y="30" font-family="monospace" font-size="12" fill="currentColor" stroke="none">10</text>
@@ -275,8 +277,8 @@
       </div>
 
       <div class="section__header reveal" style="margin-bottom:var(--gap-lg)">
-        <p class="section__label" data-i18n="section.exp">Career</p>
-        <h2 class="section__title" data-i18n="heading.exp">Experience</h2>
+        <p class="section__label" data-i18n="section.exp">Carriera</p>
+        <h2 class="section__title" data-i18n="heading.exp">Esperienza</h2>
       </div>
 
       <div class="exp-list">
@@ -286,16 +288,16 @@
           <div class="exp__meta">
             <p class="exp__role" data-i18n="exp.uber.role">Automation Intern</p>
             <div class="exp__co">
-              <img src="logos/uber.jpeg" alt="Uber" class="exp__logo" loading="lazy">
+              <img src="../logos/uber.jpeg" alt="Uber" class="exp__logo" loading="lazy">
               <span class="exp__co-name"><a href="https://uber.com" target="_blank" rel="noopener">Uber</a></span>
             </div>
-            <p class="exp__date">Feb 2026 — May 2026</p>
-            <p class="exp__loc">Kraków, Poland</p>
+            <p class="exp__date">Feb 2026 — Mag 2026</p>
+            <p class="exp__loc">Cracovia, Polonia</p>
           </div>
           <ul class="exp__bullets">
-            <li data-i18n="exp.uber.d1">Automated high-friction global operations processes using <strong>Python</strong>, deploying end-to-end solutions.</li>
-            <li data-i18n="exp.uber.d2">Integrated <strong>LLMs</strong> into the development workflow to accelerate prototyping and iteration cycles.</li>
-            <li data-i18n="exp.uber.d3">Partnered with cross-functional stakeholders to gather requirements and translate technical outcomes into business impact.</li>
+            <li data-i18n="exp.uber.d1">Automatizzazione di processi operativi globali ad alto impatto usando <strong>Python</strong>, rilasciando soluzioni end-to-end.</li>
+            <li data-i18n="exp.uber.d2">Integrazione di <strong>LLM</strong> nei flussi interni per velocizzare lo sviluppo di prototipi e l'iterazione del software.</li>
+            <li data-i18n="exp.uber.d3">Collaborazione diretta con stakeholder interfunzionali per tradurre requisiti di business in soluzioni tecniche concrete.</li>
           </ul>
         </div>
 
@@ -304,16 +306,16 @@
           <div class="exp__meta">
             <p class="exp__role" data-i18n="exp.kosmo.role">AI Engineer</p>
             <div class="exp__co">
-              <img src="logos/kosmosoft_engineering.jpeg" alt="Kosmosoft Engineering" class="exp__logo" loading="lazy">
+              <img src="../logos/kosmosoft_engineering.jpeg" alt="Kosmosoft Engineering" class="exp__logo" loading="lazy">
               <span class="exp__co-name"><a href="https://kosmosoft.eu" target="_blank" rel="noopener">Kosmosoft Engineering</a></span>
             </div>
-            <p class="exp__date">Jul 2025 — Sep 2025</p>
-            <p class="exp__loc">Mantova, Italy</p>
+            <p class="exp__date">Lug 2025 — Set 2025</p>
+            <p class="exp__loc">Mantova, Italia</p>
           </div>
           <ul class="exp__bullets">
-            <li data-i18n="exp.kosmo.d1">Built an end-to-end Python pipeline for document ingestion and preprocessing, cutting manual effort by <strong>80%</strong>.</li>
-            <li data-i18n="exp.kosmo.d2">Deployed a production <strong>RAG chatbot</strong> for client workflows using <strong>LangChain</strong>, <strong>Qdrant</strong> and FastAPI.</li>
-            <li data-i18n="exp.kosmo.d3">Implemented semantic similarity matching to improve retrieval accuracy over keyword-based approaches.</li>
+            <li data-i18n="exp.kosmo.d1">Sviluppo di una pipeline di ingestione e preprocessing documentale in Python, riducendo l'attività manuale dell'<strong>80%</strong>.</li>
+            <li data-i18n="exp.kosmo.d2">Rilascio in produzione di un <strong>assistente virtuale RAG</strong> per i workflow aziendali dei clienti basato su <strong>LangChain</strong>, <strong>Qdrant</strong> e FastAPI.</li>
+            <li data-i18n="exp.kosmo.d3">Implementazione di meccanismi di ricerca semantica per massimizzare la precisione del recupero rispetto alle ricerche a parole chiave.</li>
           </ul>
         </div>
 
@@ -322,15 +324,15 @@
           <div class="exp__meta">
             <p class="exp__role" data-i18n="exp.delta.role">Software developer</p>
             <div class="exp__co">
-              <img src="logos/delta_service.jpeg" alt="Delta Service SRL" class="exp__logo" loading="lazy">
+              <img src="../logos/delta_service.jpeg" alt="Delta Service SRL" class="exp__logo" loading="lazy">
               <span class="exp__co-name"><a href="https://deltaviadana.it" target="_blank" rel="noopener">Delta Service SRL</a></span>
             </div>
-            <p class="exp__date">Jun 2024 — Sep 2024</p>
-            <p class="exp__loc">Viadana, Italy</p>
+            <p class="exp__date">Giu 2024 — Set 2024</p>
+            <p class="exp__loc">Viadana, Italia</p>
           </div>
           <ul class="exp__bullets">
-            <li data-i18n="exp.delta.d1">Developed real-time <strong>KPI dashboards</strong> for a CRM system, providing actionable insights.</li>
-            <li data-i18n="exp.delta.d2">Automated internal data workflows using <strong>Python, SQL and REST APIs</strong>.</li>
+            <li data-i18n="exp.delta.d1">Sviluppo di <strong>dashboard KPI</strong> in tempo reale integrate nel CRM aziendale per supportare le decisioni operative.</li>
+            <li data-i18n="exp.delta.d2">Automatizzazione dei flussi dati interni sfruttando <strong>Python, database SQL e API REST</strong>.</li>
           </ul>
         </div>
 
@@ -341,14 +343,12 @@
   <hr class="divider">
 
   <!-- ════════════════════════════════════════
-       PROJECTS
+       PROGETTI
        ════════════════════════════════════════ -->
   <section id="projects" class="section-pad">
     <div class="container">
 
-      <!-- Ambient SVG -->
       <div class="ambient" style="width:100px;top:-30px;right:2%;transform:rotate(12deg);" aria-hidden="true">
-        <!-- Chip -->
         <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.2">
           <rect x="25" y="25" width="50" height="50" rx="4"/>
           <line x1="35" y1="25" x2="35" y2="10"/><line x1="50" y1="25" x2="50" y2="10"/><line x1="65" y1="25" x2="65" y2="10"/>
@@ -360,136 +360,75 @@
       </div>
 
       <div class="section__header reveal" style="margin-bottom:var(--gap-lg)">
-        <p class="section__label" data-i18n="section.work">Selected Work</p>
-        <h2 class="section__title" data-i18n="heading.projects">Projects</h2>
+        <p class="section__label" data-i18n="section.work">Progetti principali</p>
+        <h2 class="section__title" data-i18n="heading.projects">Progetti</h2>
       </div>
 
       <div class="projects__grid">
 
-        <!-- ── 01 openuni ── -->
         <article class="proj-card reveal">
           <div class="proj-card__num">01</div>
           <div class="proj-card__header">
             <h3 class="proj-card__name">openuni</h3>
             <div class="proj-card__badges">
-              <span class="badge badge--green">
-                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                4 stars
-              </span>
+              <span class="badge badge--green"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>4 stars</span>
               <span class="badge">8 forks</span>
             </div>
           </div>
-          <p class="proj-card__desc" data-i18n="proj.openuni.desc">
-            Open-source platform for university students to navigate academic curricula, discover courses and share resources. Architected a full-stack web app with clean REST API separation.
-          </p>
-          <div class="proj-card__stack">
-            <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">Open Source</span>
-          </div>
-          <div class="proj-card__links">
-            <a href="https://github.com/saajann/openuni" target="_blank" rel="noopener" class="link-arrow">
-              GitHub <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
+          <p class="proj-card__desc" data-i18n="proj.openuni.desc">Piattaforma open-source pensata per gli studenti universitari per esplorare i piani di studio, scoprire nuovi corsi e condividere risorse. Web app full-stack con una netta separazione dell'architettura API REST.</p>
+          <div class="proj-card__stack"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">Open Source</span></div>
+          <div class="proj-card__links"><a href="https://github.com/saajann/openuni" target="_blank" rel="noopener" class="link-arrow">GitHub <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
         </article>
 
-        <!-- ── 02 Thesis (Tomato Plant Leaf Recognition) ── -->
         <article class="proj-card reveal reveal-d1">
           <div class="proj-card__num">02</div>
           <div class="proj-card__header">
             <h3 class="proj-card__name" data-i18n="proj.thesis.name">Tomato Plant Leaf Recognition</h3>
-            <div class="proj-card__badges">
-              <span class="badge badge--green">B.Sc. Thesis</span>
-            </div>
+            <div class="proj-card__badges"><span class="badge badge--green">Tesi B.Sc.</span></div>
           </div>
-          <p class="proj-card__desc" data-i18n="proj.thesis.desc">
-            Deep learning leaf recognition system for tomato plants. Coordinated autonomous multi-view image acquisition with a robotic arm to achieve occlusion-resistant classification.
-          </p>
-          <div class="proj-card__stack">
-            <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">ROS2</span><span class="tag">Computer Vision</span>
-          </div>
+          <p class="proj-card__desc" data-i18n="proj.thesis.desc">Sistema di classificazione basato su deep learning per identificare lo stato delle foglie del pomodoro. Coordinamento di un braccio robotico per l'acquisizione autonoma multi-vista delle immagini.</p>
+          <div class="proj-card__stack"><span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">ROS2</span><span class="tag">Computer Vision</span></div>
           <div class="proj-card__links">
-            <span class="link-arrow" style="cursor:default;opacity:.5" data-i18n="proj.stealth.private">⚿ Private Source</span>
+            <span class="link-arrow" style="cursor:default;opacity:.5" data-i18n="proj.stealth.private">⚿ Codice Privato</span>
           </div>
         </article>
 
-        <!-- ── 03 Fugax ── -->
         <article class="proj-card reveal reveal-d2">
           <div class="proj-card__num">03</div>
           <div class="proj-card__header">
             <h3 class="proj-card__name">fugax</h3>
-            <div class="proj-card__badges">
-              <span class="badge">Security</span>
-            </div>
+            <div class="proj-card__badges"><span class="badge">Sicurezza</span></div>
           </div>
-          <p class="proj-card__desc" data-i18n="proj.fugax.desc">
-            Zero-knowledge secret-sharing service in Go. AES-256-GCM client-side encryption, TTL expiry via background goroutines and multi-stage Docker deployment.
-          </p>
-          <div class="proj-card__stack">
-            <span class="tag">Go</span><span class="tag">Docker</span><span class="tag">PostgreSQL</span><span class="tag">Cryptography</span>
-          </div>
-          <div class="proj-card__links">
-            <a href="https://github.com/saajann/fugax" target="_blank" rel="noopener" class="link-arrow">
-              GitHub <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
+          <p class="proj-card__desc" data-i18n="proj.fugax.desc">Servizio Go per la condivisione di informazioni riservate con approccio zero-knowledge. Crittografia client-side AES-256-GCM, auto-eliminazione via goroutine e containerizzazione Docker multi-stage.</p>
+          <div class="proj-card__stack"><span class="tag">Go</span><span class="tag">Docker</span><span class="tag">PostgreSQL</span><span class="tag">Crittografia</span></div>
+          <div class="proj-card__links"><a href="https://github.com/saajann/fugax" target="_blank" rel="noopener" class="link-arrow">GitHub <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
         </article>
 
-        <!-- ── 04 AI Construction Manager ── -->
         <article class="proj-card reveal">
           <div class="proj-card__num">04</div>
           <div class="proj-card__header">
             <h3 class="proj-card__name" data-i18n="proj.stealth.name">AI Construction Manager</h3>
-            <div class="proj-card__badges">
-              <span class="badge">0 to 1</span>
-            </div>
+            <div class="proj-card__badges"><span class="badge">0 to 1</span></div>
           </div>
-          <p class="proj-card__desc" data-i18n="proj.stealth.desc">
-            AI-native platform with conversational interface to track site progress, budget and scheduling.
-          </p>
-          <div class="proj-card__stack">
-            <span class="tag">Python</span><span class="tag">LangChain</span><span class="tag">LLMs</span><span class="tag">FastAPI</span>
-          </div>
-          <div class="proj-card__links">
-            <span class="link-arrow" style="cursor:default;opacity:.5" data-i18n="proj.stealth.private">⚿ Private Source</span>
-          </div>
+          <p class="proj-card__desc" data-i18n="proj.stealth.desc">Piattaforma nativa AI con interfaccia conversazionale per il tracciamento dei progressi in cantiere, budget e pianificazione.</p>
+          <div class="proj-card__stack"><span class="tag">Python</span><span class="tag">LangChain</span><span class="tag">LLM</span><span class="tag">FastAPI</span></div>
+          <div class="proj-card__links"><span class="link-arrow" style="cursor:default;opacity:.5" data-i18n="proj.stealth.private">⚿ Codice Privato</span></div>
         </article>
 
-        <!-- ── 05 Construction Site Monitor ── -->
         <article class="proj-card reveal reveal-d1">
           <div class="proj-card__num">05</div>
-          <div class="proj-card__header">
-            <h3 class="proj-card__name">construction-site-monitoring</h3>
-          </div>
-          <p class="proj-card__desc" data-i18n="proj.iot.desc">
-            Real-time IoT monitoring system processing distributed sensor data via MQTT to detect hazardous conditions and trigger automated safety alerts.
-          </p>
-          <div class="proj-card__stack">
-            <span class="tag">Python</span><span class="tag">MQTT</span><span class="tag">IoT</span><span class="tag">Real-time</span>
-          </div>
-          <div class="proj-card__links">
-            <a href="https://github.com/saajann/construction-site-monitoring-system" target="_blank" rel="noopener" class="link-arrow">
-              GitHub <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
+          <div class="proj-card__header"><h3 class="proj-card__name">construction-site-monitoring</h3></div>
+          <p class="proj-card__desc" data-i18n="proj.iot.desc">Sistema IoT in tempo reale per monitorare i sensori in cantiere tramite protocollo MQTT, rilevare condizioni anomale e inviare alert di sicurezza automatici.</p>
+          <div class="proj-card__stack"><span class="tag">Python</span><span class="tag">MQTT</span><span class="tag">IoT</span><span class="tag">Tempo reale</span></div>
+          <div class="proj-card__links"><a href="https://github.com/saajann/construction-site-monitoring-system" target="_blank" rel="noopener" class="link-arrow">GitHub <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
         </article>
 
-        <!-- ── 06 obsidian-mention-people ── -->
         <article class="proj-card reveal reveal-d2">
           <div class="proj-card__num">06</div>
-          <div class="proj-card__header">
-            <h3 class="proj-card__name">obsidian-mention-people</h3>
-          </div>
-          <p class="proj-card__desc" data-i18n="proj.obsidian.desc">
-            Obsidian plugin enabling @-mention syntax for contacts within notes to improve knowledge graph density and personal CRM workflows.
-          </p>
-          <div class="proj-card__stack">
-            <span class="tag">TypeScript</span>
-          </div>
-          <div class="proj-card__links">
-            <a href="https://github.com/saajann/obsidian-mention-people" target="_blank" rel="noopener" class="link-arrow">
-              GitHub <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
+          <div class="proj-card__header"><h3 class="proj-card__name">obsidian-mention-people</h3></div>
+          <p class="proj-card__desc" data-i18n="proj.obsidian.desc">Estensione per Obsidian che introduce la sintassi di menzione (@-mention) all'interno delle note, migliorando la densità del grafo di conoscenza personale.</p>
+          <div class="proj-card__stack"><span class="tag">TypeScript</span></div>
+          <div class="proj-card__links"><a href="https://github.com/saajann/obsidian-mention-people" target="_blank" rel="noopener" class="link-arrow">GitHub <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
         </article>
 
       </div>
@@ -499,12 +438,11 @@
   <hr class="divider">
 
   <!-- ════════════════════════════════════════
-       EXTRA (GitHub + Awards)
+       EXTRA (GitHub + Premi)
        ════════════════════════════════════════ -->
   <section id="extra" class="section-pad">
     <div class="container">
 
-      <!-- Ambient SVG -->
       <div class="ambient" style="width:120px;top:5%;right:3%;transform:rotate(8deg);" aria-hidden="true">
         <svg viewBox="0 0 100 120" fill="none" stroke="currentColor" stroke-width="1.2">
           <polygon points="50,10 62,38 92,38 68,57 77,85 50,67 23,85 32,57 8,38 38,38"/>
@@ -526,66 +464,56 @@
         </p>
         <div class="gh-stats-grid">
           <div class="gh-chart-wrap">
-            <img src="https://ghchart.rshah.org/10b981/saajann"
-                 alt="Saajan's GitHub contributions graph"
-                 loading="lazy"
-                 class="gh-chart-img">
+            <img src="https://ghchart.rshah.org/10b981/saajann" alt="Grafico contributi GitHub di Saajan" loading="lazy" class="gh-chart-img">
           </div>
           <div class="gh-stats-card">
             <div class="gh-stat-item">
               <span class="gh-stat-num" id="gh-repos-val">-</span>
-              <span class="gh-stat-lbl" data-i18n="extra.gh.repos">Public Repositories</span>
+              <span class="gh-stat-lbl" data-i18n="extra.gh.repos">Repository Pubbliche</span>
             </div>
             <div class="gh-stat-item">
               <span class="gh-stat-num" id="gh-stars-val">-</span>
-              <span class="gh-stat-lbl" data-i18n="extra.gh.stars">Total Stars</span>
+              <span class="gh-stat-lbl" data-i18n="extra.gh.stars">Stelle Totali</span>
             </div>
             <div class="gh-stat-item">
               <span class="gh-stat-num" id="gh-gists-val">-</span>
-              <span class="gh-stat-lbl" data-i18n="extra.gh.gists">Public Gists</span>
+              <span class="gh-stat-lbl" data-i18n="extra.gh.gists">Gist Pubblici</span>
             </div>
             <div class="gh-stat-item">
               <span class="gh-stat-num" id="gh-joined-val">-</span>
-              <span class="gh-stat-lbl" data-i18n="extra.gh.joined">Member Since</span>
+              <span class="gh-stat-lbl" data-i18n="extra.gh.joined">Membro dal</span>
             </div>
           </div>
         </div>
         <div class="gh-meta-row" style="justify-content: flex-end;">
           <a href="https://github.com/saajann" target="_blank" rel="noopener" class="gh-profile-link" data-i18n="extra.gh.view">
-            View GitHub Profile →
+            Vedi profilo GitHub →
           </a>
         </div>
       </div>
 
       <!-- Awards subsection -->
       <div class="extra__awards reveal">
-        <h3 class="extra__subheading" data-i18n="extra.subheading.awards" style="margin-bottom: 2rem;">Awards &amp; Recognition</h3>
+        <h3 class="extra__subheading" data-i18n="extra.subheading.awards" style="margin-bottom: 2rem;">Premi &amp; Riconoscimenti</h3>
         <div class="awards-list">
-          <!-- SCIoTeM Hackathon -->
           <div class="award reveal">
             <div class="award__meta">
-              <p class="award__place" data-i18n="award.sciote.place">🏆 1st Place</p>
+              <p class="award__place" data-i18n="award.sciote.place">🏆 1° Posto</p>
               <p class="award__date">Feb 2026</p>
             </div>
             <div>
               <h3 class="award__title" data-i18n="award.sciote.title">Hackathon — SCIoTeM 2026</h3>
-              <p class="award__desc" data-i18n="award.sciote.desc">
-                Designed and shipped a fully working demand-adaptive public transport system for Bologna in under 48 hours — real-time route optimisation driven by citizen demand, built with Python and Flask.
-              </p>
+              <p class="award__desc" data-i18n="award.sciote.desc">Progettazione e sviluppo in meno di 48 ore di un sistema di trasporto pubblico a chiamata per Bologna — ottimizzazione dei percorsi in tempo reale guidata dalla domanda, sviluppato in Python e Flask.</p>
             </div>
           </div>
-
-          <!-- CORDA -->
           <div class="award reveal">
             <div class="award__meta">
               <p class="award__place" data-i18n="award.corda.place">Top 10 / ~500</p>
-              <p class="award__date">May 2022</p>
+              <p class="award__date">Mag 2022</p>
             </div>
             <div>
-              <h3 class="award__title" data-i18n="award.corda.title">Mathematics Merit Award — CORDA Project</h3>
-              <p class="award__desc" data-i18n="award.corda.desc">
-                Mathematics Merit Award for ranking in the top 10 out of ~500 participants in the university-level CORDA mathematics assessment program.
-              </p>
+              <h3 class="award__title" data-i18n="award.corda.title">Premio al Merito in Matematica — Progetto CORDA</h3>
+              <p class="award__desc" data-i18n="award.corda.desc">Riconoscimento di merito per essermi classificato nella top 10 su circa 500 partecipanti nella valutazione di matematica a livello universitario del progetto CORDA.</p>
             </div>
           </div>
         </div>
@@ -602,7 +530,7 @@
     <div class="container">
       <div class="footer__inner reveal">
         <h2 class="footer__cta" data-i18n="footer.cta">
-          Let's build<br>something <em>great.</em>
+          Costruiamo<br>qualcosa di <em>grande.</em>
         </h2>
 
         <div class="footer__contact-row">
@@ -621,10 +549,10 @@
         </div>
 
         <div class="footer__row">
-          <nav class="footer__nav" aria-label="Footer navigation">
-            <a href="#about"      data-i18n="nav.about">About</a>
-            <a href="#experience" data-i18n="nav.exp">Experience</a>
-            <a href="#projects"   data-i18n="nav.work">Projects</a>
+          <nav class="footer__nav" aria-label="Navigazione footer">
+            <a href="#about"      data-i18n="nav.about">Chi sono</a>
+            <a href="#experience" data-i18n="nav.exp">Esperienza</a>
+            <a href="#projects"   data-i18n="nav.work">Progetti</a>
             <a href="#extra"      data-i18n="nav.extra">Extra</a>
           </nav>
 
@@ -636,6 +564,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="../script.js"></script>
 </body>
 </html>
