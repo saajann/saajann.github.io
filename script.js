@@ -61,10 +61,10 @@
       'extra.subheading.awards':'Awards &amp; Recognition',
 
       'award.sciote.place':'🏆 1st Place',
-      'award.sciote.title':'Hackathon — SCIoTeM 2026',
+      'award.sciote.title':'<a href="https://www.ltomantova.it/2026/02/23/i-vincitori-di-sciotem-2026/" target="_blank" rel="noopener">Hackathon — SCIoTeM 2026</a>',
       'award.sciote.desc': 'Designed and shipped a fully working demand-adaptive public transport system for Bologna in under 48 hours — real-time route optimisation driven by citizen demand, built with Python and Flask.',
       'award.corda.place': 'Top 10 / ~500',
-      'award.corda.title': 'Mathematics Merit Award — CORDA Project',
+      'award.corda.title': '<a href="https://www.unipr.it/notizie/progetto-corda-ecco-i-migliori-studenti-e-studentesse-del-2021-22" target="_blank" rel="noopener">Mathematics Merit Award — CORDA Project</a>',
       'award.corda.desc':  'Mathematics Merit Award for ranking in the top 10 out of ~500 participants in the university-level CORDA mathematics assessment program.',
 
       'about.p1':          'Final-year <strong>Computer Engineering</strong> student, graduating with <strong>110/110 (expected, October 2026)</strong> from UNIMORE and starting an <strong>MSc in Computer Engineering</strong> directly after.',
@@ -85,7 +85,7 @@
     },
 
     it: {
-      'nav.logo':        '// saajann',
+      'nav.logo':        '// saajansaini.com',
       'nav.work':        'Progetti',
       'nav.exp':         'Esperienza',
       'nav.extra':       'Extra',
@@ -139,10 +139,10 @@
       'extra.subheading.awards':'Premi &amp; Riconoscimenti',
 
       'award.sciote.place':'🏆 1° Posto',
-      'award.sciote.title':'Hackathon — SCIoTeM 2026',
+      'award.sciote.title':'<a href="https://www.ltomantova.it/2026/02/23/i-vincitori-di-sciotem-2026/" target="_blank" rel="noopener">Hackathon — SCIoTeM 2026</a>',
       'award.sciote.desc': 'Progettazione e sviluppo in meno di 48 ore di un sistema di trasporto pubblico a chiamata per Bologna — ottimizzazione dei percorsi in tempo reale guidata dalla domanda, sviluppato in Python e Flask.',
       'award.corda.place': 'Top 10 / ~500',
-      'award.corda.title': 'Premio al Merito in Matematica — Progetto CORDA',
+      'award.corda.title': '<a href="https://www.unipr.it/notizie/progetto-corda-ecco-i-migliori-studenti-e-studentesse-del-2021-22" target="_blank" rel="noopener">Premio al Merito in Matematica — Progetto CORDA</a>',
       'award.corda.desc':  'Riconoscimento di merito per essermi classificato nella top 10 su circa 500 partecipanti nella valutazione di matematica a livello universitario del progetto CORDA.',
 
       'about.p1':          'Studente all\'ultimo anno di <strong>Ingegneria Informatica</strong> presso UNIMORE con votazione prevista di <strong>110/110 (laurea a ottobre 2026)</strong>. Successivamente inizierò la <strong>Laurea Magistrale in Ingegneria Informatica</strong>.',
